@@ -1,0 +1,24 @@
+{
+  "name": "mobi-store",
+  "version": "1.0.0",
+  "description": "A react mobile ecommerce store implementation using react and netlify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleekcharly/mobi-store.git"
+  },
+  "keywords": [
+    "mobile",
+    "store",
+    "ecommerce"
+  ],
+  "author": "Ukasoanya  Charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sleekcharly/mobi-store/issues"
+  },
+  "homepage": "https://github.com/sleekcharly/mobi-store#readme"
+}
