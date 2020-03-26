@@ -1,16 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+
+//bring in components
+import Navbar from './components/Navbar';
+import ProductList from './components/ProductList';
+import Details from './components/Details';
+import Cart from './components/Cart';
+import Default from './components/Default';
 
 // bring in bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
-//bring in font awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 function App() {
   return (
     <React.Fragment>
-      <h3>Hello from app</h3>
+      <Navbar /> {/* show navbar on every page */}
+      <Switch>
+        <Route exact path="/" component={ProductList} />
+        <Route path="/details" component={Details} />
+        <Route path="/cart" component={Cart} />
+        <Route component={Default} />
+      </Switch>
     </React.Fragment>
   );
 }
